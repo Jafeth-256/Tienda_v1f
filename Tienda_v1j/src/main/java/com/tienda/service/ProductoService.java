@@ -23,11 +23,11 @@ public interface ProductoService {
     public void delete(Producto producto);
     
     //Se enuncia un método para recuperar los productos con una consulta ampliada
-    public List<Producto>buscaProductosPorPrecioEntre(double precioInf, double precioSup);
+    public List<Producto>findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
     
     //Se enuncia un método para recuperar los productos con una consulta JPQL
-    public List<Producto>consultaJPQL(double precioInf, double precioSup);
-    
+    public List<Producto>metodoJPQL(double precioInf, double precioSup);
+
     //Se enuncia un método para recuperar los productos con una consulta SQL
     public List<Producto>consultaSQL(double precioInf, double precioSup);
     

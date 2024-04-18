@@ -41,10 +41,8 @@
                             <div class="modal-body">
 
                                 <div class="mb-3">   
-                                    <select class="form-select" aria-label="Default select example"                                                                            
-                                            name="categoria.idCategoria">
-                                        <option th:each="categoria : ${categorias}"
-                                                th:value="${categoria.idCategoria}">[[${categoria.descripcion}]]</option>   
+                                    <select class="form-select" aria-label="Default select example" name="categoria.idCategoria">
+                                        <option th:each="categoria : ${categorias}" th:value="${categoria.idCategoria}">[[${categoria.descripcion}]]</option>   
                                     </select>                             
                                 </div>
 
@@ -117,7 +115,7 @@
                                             <td><a th:href="@{/producto/eliminar/}+${producto.idProducto}"
                                                    class="btn btn-danger">
                                                     <i class="fas fa-trash"></i> [[#{accion.eliminar}]]</a>
-                                                <a th:href="@{/producto/modificar/}+${producto.idProducto}"
+                                                <a th:href="@{/producto/modifica/}+${producto.idProducto}"
                                                    class="btn btn-success">
                                                     <i class="fas fa-pencil"></i> [[#{accion.actualizar}]]</a></td></tr>
                                     </tbody>

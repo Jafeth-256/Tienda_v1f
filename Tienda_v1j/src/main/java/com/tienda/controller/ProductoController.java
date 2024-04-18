@@ -62,7 +62,7 @@ public class ProductoController {
         return "redirect:/producto/listado";
     }
 
-    @GetMapping("/modificar/{idProducto}")
+    @GetMapping("/modifica/{idProducto}")
     public String productoModificar(Producto producto, Model model) {
         var categorias = categoriaService.getCategorias(false);
         model.addAttribute("categorias", categorias);
