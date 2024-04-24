@@ -7,9 +7,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
       xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
-       </head>
+    </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}"></header>
+        <section th:replace="~{carrito/fragmentos :: listadoProductos}"/>
         <footer th:replace="~{layout/plantilla :: footer}"></footer>
 
     </body>
